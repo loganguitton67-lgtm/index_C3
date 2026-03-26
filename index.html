@@ -6,10 +6,10 @@
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
     <style>
         :root {
-            --ancient-yellow: #f2e6c9;
-            --vermilion: #962218;
+            --ancient-yellow: #EDE0CA;
+            --vermilion: #62B8B8;
             --gold: #b3935d;
-            --ink: #1a1a1a;
+            --ink: #5D5149;
         }
         body { 
             background: var(--ancient-yellow); 
@@ -136,7 +136,7 @@
                                 <b>${categories[params.value[1]]}</b><br/>
                                 <small>时期：${dynasties[params.value[0]]}</small><br/>
                                 <span>构成占比：${val}%</span><br/>
-                                <div style="margin-top:5px; color:#962218; font-weight:bold;">${status}</div>
+                                <div style="margin-top:5px; color:#62B8B8; font-weight:bold;">${status}</div>
                             </div>
                         </div>`;
                 }
@@ -163,7 +163,7 @@
                 itemHeight: getVisualMapHeight(),
                 text: ['高占比', '低占比'],
                 textStyle: { color: '#1a1a1a', fontFamily: 'STKaiti' },
-                inRange: { color: ['#fdf5e6', '#d1c1a5', '#962218'] }
+                inRange: { color: ['#fdf5e6', '#d1c1a5', '#62B8B8'] }
             },
             series: [{
                 name: '占比',
